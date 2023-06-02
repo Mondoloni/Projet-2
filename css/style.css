@@ -305,7 +305,7 @@ nav{
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: space-between;
     margin:0 50px 0 50px;
     height: 611px;
@@ -411,11 +411,10 @@ nav{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    /* align-content: center; */
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    padding:10px 0px 15px 0px;
+    padding:10px 0px 0px 0px;
 }
 /****** Populaires ***********/
 .populaires {
