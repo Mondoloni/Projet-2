@@ -305,7 +305,12 @@ nav{
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
+    flex: row;
     justify-content: space-between;
+    margin:0 50px 0 50px;
+    height: 611px;
+    
+
 }
 
 .hebergements-and-populaires section {
@@ -313,13 +318,76 @@ nav{
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    
 }
+
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    padding: 30px;
+}
+.hebergements h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    height: 26px;
+    margin-top :0px;
+    margin-bottom: 30px;
+}
+.hebergements h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
 }
 
+.hebergements-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height:207.25px;
+}
+
+.hebergements-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 207px;
+    width:250px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 0px 0px 15px;
+    gap:4px;
+    border :solid;
+}
+
+.hebergements-cards img{
+    width: 95%;
+    height: 124px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px solid #FFFFFF;
+    margin:0px;
+    padding: 0px;
+}
+
+.hebergements-cards .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 64.25px;
+    width:100%;
+    border :solid;
+    /* gap: 8px; */
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -329,9 +397,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }  
-
 
 .populaires-cards .card {
     display: flex;
