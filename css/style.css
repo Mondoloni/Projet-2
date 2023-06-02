@@ -231,13 +231,14 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     height: 50px;
     padding: 0px;
+    gap: 15px;
     margin-top:35px;
-    border:solid;
 }
 
-.FilterBar p{
+.FilterBar h2{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -248,14 +249,58 @@ nav{
     color: #000000;
 }
 
-.FilterBar div{
+.FilterBar_Filtres{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     height: 50px;
+    padding: 4px 19px;
+    gap: 10px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+}
+.FilterBar_Filtres:hover {
+    background-color: #DEEBFF;
+    
+  }
 
+.FilterBar_Filtres h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000; 
+}
+
+/***** InfoBar *******/
+.InfoBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    padding:10px ;
+    gap: 10px;
+    height: 24px;
+
+}
+
+.InfoBar img{
+    height: 24px;
+    border: 0px solid #D9D9D9;
+    box-sizing: border-box;
+}
+
+.InfoBar h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px; 
+    color: #000000;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
