@@ -60,19 +60,18 @@ nav{
     height: 79px;
 }
 
-  .nav-logo{
+.nav-logo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px 30px;
 }
-
- .nav-logo img{
+.nav-logo img{
     width: 61.09px;
     height: 19px; 
 } 
 
- .nav-lien {
+.nav-lien {
         display:flex;
         flex-direction: row;
         justify-content: space-around; 
@@ -164,7 +163,7 @@ nav{
     height:19px;
 }
 
-.Search-bar {
+.search-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -181,12 +180,10 @@ nav{
     border-radius: 15px;
 }
 
-.Search-bar img{
-    width: 50px;
-    height: 49px;
-}
 
-.Search-bar input{
+
+
+ .search-bar input{
   
     font-family: 'Raleway';
     font-style: normal;
@@ -197,7 +194,11 @@ nav{
     border:none;
 }
 
-.Search-bar input::placeholder{
+.search-i-rechercher{
+    cursor: pointer;
+}
+
+.search-bar input::placeholder{
     background: #FFFFFF;
     border: none ;
     font-family: 'Raleway';
@@ -206,13 +207,14 @@ nav{
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    
 }
 
-.Search-bar input:focus{
+.search-bar input:focus{
     outline-color: #FFFFFF;
 }
 
-.Search-bar input[type="submit"]{
+.search-bar input[type="submit"]{
     height: 49px;
     background: #0065FC;
     border: 1px solid #0065FC;
@@ -223,11 +225,33 @@ nav{
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+} 
+
+.search-i{
+    width: 50px;
+    height: 49px; 
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background: #F2F2F2;
+
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    align-items: center; 
+/* border:solid;*/
+}
+
+
+ .search-i i{
+    color: #000000;
 }
 
 /*****FilterBar*****/
 
-.FilterBar{
+.filterbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -238,7 +262,7 @@ nav{
     margin-top:35px;
 }
 
-.FilterBar h2{
+.filterbar h2{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -249,7 +273,7 @@ nav{
     color: #000000;
 }
 
-.FilterBar_Filtres{
+.filterbar_filtres{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -259,13 +283,15 @@ nav{
     gap: 10px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    cursor: pointer;
 }
-.FilterBar_Filtres:hover {
+
+.filterbar_filtres:hover {
     background-color: #DEEBFF;
     
   }
 
-.FilterBar_Filtres h3{
+.filterbar_filtres h3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -275,7 +301,7 @@ nav{
 }
 
 /***** InfoBar *******/
-.InfoBar {
+.infobar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -288,13 +314,13 @@ nav{
 
 }
 
-.InfoBar img{
+/* .infobar img{
     height: 24px;
     border: 0px solid #D9D9D9;
     box-sizing: border-box;
-}
+} */
 
-.InfoBar h3{
+.infobar h3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -348,19 +374,23 @@ nav{
     margin:30px 0 30px 0;
     gap:30px;
 }
-
+.hebergements-cards a{
+    text-decoration: none;
+    width:33%;
+}
 .hebergements-cards .card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     height: 207px;
-    width:33%;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 0px 0px 15px;
     gap:4px;
 }
+
+
 
 .hebergements-cards img{
     width: 95%;
@@ -441,6 +471,11 @@ nav{
     border-bottom-left-radius: 20px;
 }
 
+.populaires-cards a{
+    color: #000000;
+    text-decoration: none;
+}
+
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -464,7 +499,65 @@ nav{
 }
 
 
+.activites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
 
+.activites-title{
+    padding: 30px;
+}
+
+.activites-title h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.activites-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin:0px 30px 30px 30px;
+}
+
+.activites-card a{
+     width:24%; 
+     color: #000000;
+     text-decoration: none;
+}
+
+.activites-card-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.activites-card-article h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding: 20px 19px 20px 19px;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-top: 0px;
+}
+
+.activites-card-article img{
+    height: 380px;
+    object-fit:cover;
+    border-radius: 20px 20px 0px 0px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
