@@ -334,7 +334,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     margin:0 50px 0 50px;
-    height: 611px;
+    /* height: 611px; */
     
 
 }
@@ -436,7 +436,7 @@ nav{
 
 }
 .afficher-plus{
-    margin:50px 0px 0px 0px;
+    padding:10px 0px 10px 0px;
 }
 .afficher-plus a{
     font-family: 'Raleway';
@@ -445,8 +445,7 @@ nav{
     font-size: 18px;
     line-height: 21px;
     text-decoration: none;
-    color: #000000;
-    
+    color: #000000;    
 }
 /****** Populaires ***********/
 .populaires {
@@ -504,7 +503,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50px;
+    margin: 20px 50px 20px 50px;
 }
 
 .activites-title{
@@ -558,6 +557,45 @@ nav{
     height: 380px;
     object-fit:cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+
+/*******Footer ********/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:0px 50px 0px 50px;
+    background: #F2F2F2;
+}
+
+.footer-section{
+    width:33%;
+    margin: 8px 0px 7px 20px;
+}
+
+.footer-section h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.footer-section h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.footer-section a{
+    color: #000000;
+    text-decoration: none;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
