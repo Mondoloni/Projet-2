@@ -197,6 +197,7 @@ apparaisse correctement *******/
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    text-align: center;
     border:none;
 }
 
@@ -687,10 +688,40 @@ nav{
     height:33%;
 }
 
-.search-i-rechercher{
-    display: none;
+
+.search-bar{
+    margin:0px 20px 35px 20px;
+    width:auto;
+    border:solid;
 }
 
+.search-bar input{
+  
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    border:none;
+}
+.search-bar input:focus{
+    outline-color: #FFFFFF;
+}
+
+/* .search-bar input[type="submit"]{
+    height: 49px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+} */
 .search-i-loupe{
     display:block;
     width: 49px;
@@ -700,10 +731,18 @@ height: 49px;
 
 border: 1px solid #e80a0a;
 border-radius: 15px;
+display: block;
+border: solid;
 }
 
 .search-i-loupe i{
     color:#FFFFFF;
+    /* display: block;
+    border: solid; */
 }
 /* <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>  */
+}
+
+.search-i-rechercher{
+    display: none;
 }
