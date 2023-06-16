@@ -599,6 +599,33 @@ apparaisse correctement *******/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /******Formulaire Recherche *****/
+    .form-recherche{
+        height:auto;
+    }
+
+    /*****FilterBar*****/
+
+     .filterbar{
+        flex-wrap: wrap;
+        height:auto;
+    }
+
+    .filterbar h2{
+        text-align:left;
+        width:100%;
+    }
+
+    .filterbar_filtres h3{
+        line-height: 19px;
+    }
+  /***** InfoBar *******/
+  .infobar {
+      
+    margin-top: 20px;
+    margin-bottom: 0px;  
+}
+/****Hebergements*****/   
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -606,7 +633,7 @@ apparaisse correctement *******/
     .hebergements {
         width: 100%;
     }
-
+/****** Populaires ***********/
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -616,10 +643,12 @@ apparaisse correctement *******/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width:100%;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .populaires-cards a{
+        width:33%;
+        margin-right: 20px;
     }
 
     .populaires-cards .card-title {
@@ -629,8 +658,16 @@ apparaisse correctement *******/
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+/********Activites********/
 
+    .activites-card-article img{
+    height: 200px;
+    object-fit:cover;
+    border-radius: 20px 20px 0px 0px;
+    } 
+
+
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     
@@ -640,14 +677,14 @@ apparaisse correctement *******/
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 79px;
-        width:100%;
+        height: auto;
     }
 
     .nav-bouton{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+     
     }
     /****Formulaire de recherche *******/
     .form-recherche{
@@ -950,7 +987,8 @@ apparaisse correctement *******/
         flex-direction: column;
         justify-content: flex-start;
         width:100%;
-         margin:0px;
+        margin:0px;
+        padding-top: 30px;
         background: #F2F2F2;
     }
 
@@ -958,27 +996,4 @@ apparaisse correctement *******/
         width:100%;
         margin: 0px 0px 30px 30px;
     }
-/*
-    .footer-section h2{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        color: #000000;
-    }
-
-    .footer-section h3{
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #000000;
-    }
-
-    .footer-section a{
-        color: #000000;
-        text-decoration: none;
-    } */
 }
