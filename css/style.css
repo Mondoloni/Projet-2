@@ -348,7 +348,7 @@ apparaisse correctement *******/
     background: #F2F2F2;
     border-radius: 20px;
 }
-.hebergements h1{
+.hebergements h2{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -934,7 +934,7 @@ apparaisse correctement *******/
     background-color: #FFFFFF;
 }
 
-.hebergements h1{
+.hebergements h2{
     margin :0px 20px 0px 20px;
 }
 
