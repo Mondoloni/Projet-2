@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    /* margin:0%; */
 }
 
 .main-container {
@@ -599,15 +600,26 @@ apparaisse correctement *******/
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  /******Formulaire Recherche *****/
+    /* .nav{
+         width:95%;
+    } */
+
+    .nav-lien {
+        padding: 1%;
+ }  
+ 
+    /******Formulaire Recherche *****/
     .form-recherche{
         height:auto;
+        margin:5% 5% 35px 5%;
+        width:85%;
     }
 
     /*****FilterBar*****/
 
      .filterbar{
         flex-wrap: wrap;
+        align-items: flex-start;
         height:auto;
     }
 
@@ -628,6 +640,8 @@ apparaisse correctement *******/
 /****Hebergements*****/   
     .hebergements-and-populaires {
         flex-direction: column;
+        margin:0 7% 0 7% ;
+        width:86%;
     }
 
     .hebergements {
@@ -659,6 +673,14 @@ apparaisse correctement *******/
         font-size: 13px;
     }
 /********Activites********/
+    .activites{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 50px 20px 50px;
+        /* border :1px solid; */
+        width:85%;
+    }
 
     .activites-card-article img{
     height: 200px;
@@ -670,7 +692,11 @@ apparaisse correctement *******/
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+    body {
+        /* display: flex;
+        justify-content: center; */
+        margin:0%;
+    }
     /***** Barre de navigation + Logo****/
     nav{
         display: flex; 
@@ -845,6 +871,7 @@ apparaisse correctement *******/
     margin: 0px 0px 15px 0px;
     border-radius: 0%;
     width: auto;
+    border : 1px solid;
 }
 
 .populaires-title {
