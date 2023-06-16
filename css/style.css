@@ -705,13 +705,18 @@ apparaisse correctement *******/
         align-items: center;
         height: auto;
     }
-
+    .nav-lien{
+        width:96%;
+        justify-content: space-between;
+        padding: 0 2% 0 2%;
+    }
     .nav-bouton{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
      
     }
+ 
     /****Formulaire de recherche *******/
     .form-recherche{
         display: flex;
@@ -719,6 +724,7 @@ apparaisse correctement *******/
         justify-content: space-between;
         height:auto;
         padding:0px;
+        width:100%;
         margin: 30px 0px 35px 0px;
     }
 
@@ -871,7 +877,6 @@ apparaisse correctement *******/
     margin: 0px 0px 15px 0px;
     border-radius: 0%;
     width: auto;
-    border : 1px solid;
 }
 
 .populaires-title {
@@ -884,17 +889,22 @@ apparaisse correctement *******/
 .populaires-cards{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.populaires-cards .card {
-    display: flex;
-    width:auto;
-}
+
 
 .populaires-cards a{
     color: #000000;
     text-decoration: none;
+    width:90%;
+    margin:0 5% 0 0%;
+    
 }
-
+.populaires-cards .card {
+    display: flex;
+    width:100%;
+    /* border : 1px solid; */
+}
 .populaires-cards .card-title{
     font-family: 'Raleway';
     font-style: normal;
@@ -932,9 +942,9 @@ apparaisse correctement *******/
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:95%;
+    width:90%;
     height:auto;
-    margin:15px 10px 15px 10px;
+    margin:15px 5% 15px 5%;
    
 }
 
