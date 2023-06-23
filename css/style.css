@@ -174,7 +174,6 @@ nav{
     padding:0px;
     gap:24px;
     height:49px;
-    width: 377px;
     top:88px;
 
     background: #FFFFFF;
@@ -186,10 +185,9 @@ nav{
     display:none;
 }
 
-/*****Zone à commenter pour que la zone de l'icone location-dot
-apparaisse correctement *******/
 
-/* 
+
+
  .search-bar input{
   
     font-family: 'Raleway';
@@ -198,7 +196,6 @@ apparaisse correctement *******/
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    text-align: center;
     border:none;
 }
 
@@ -233,7 +230,7 @@ apparaisse correctement *******/
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-}  */
+} 
 
 .search-i{
     width: 50px;
