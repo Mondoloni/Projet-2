@@ -16,13 +16,12 @@
 body {
     display: flex;
     justify-content: center;
-    /* margin:0%; */
+    margin:0%; 
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    /* padding: 0 50px; */
     box-sizing: border-box;
 }
 
@@ -197,6 +196,7 @@ nav{
 
 .search-i-rechercher{
     cursor: pointer;
+   
 }
 
 .search-bar input::placeholder{
@@ -208,6 +208,7 @@ nav{
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+     
     
 }
 
@@ -215,6 +216,9 @@ nav{
     outline-color: #FFFFFF;
 }
 
+.search-bar input[type="text"]{
+padding:1px 0px 1px 10px;
+}
 .search-bar input[type="submit"]{
     height: 49px;
     background: #0065FC;
@@ -599,7 +603,7 @@ nav{
     }
   
     .nav{
-         margin:0 50px 0px 50px;
+         margin:0 0px 0px 0px;
     }
 
     .nav-logo{
@@ -608,9 +612,15 @@ nav{
 
     .nav-lien {
         padding: 1% 3% 1% 10%;
+        width:100%;
     }  
     
-
+    .nav-bouton img{
+        width: 100%;
+        height: 2px;
+        left:0px;
+        top:0px;
+    }
     /******Formulaire Recherche *****/
     .form-recherche{
         height:auto;
@@ -681,7 +691,6 @@ nav{
         flex-direction: column;
         justify-content: center;
         margin: 20px 50px 20px 50px;
-        /* border :1px solid; */
         width:85%;
     }
 
@@ -690,7 +699,14 @@ nav{
     object-fit:cover;
     border-radius: 20px 20px 0px 0px;
     } 
+.activites-card-article h3{
 
+height: 40px;
+}
+
+.footer{
+    width:82%;
+}
 
 }
 /* Small devices (phones, less than 768px) */
@@ -704,21 +720,27 @@ nav{
     nav{
         display: flex; 
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         height: auto;
     }
     .nav-lien{
-        width:96%;
-        justify-content: space-between;
-        padding: 0 2% 0 2%;
+        width:100%;
+        justify-content: space-around;
+        padding: 0;
+        gap:0;
     }
     .nav-bouton{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        width:50%;
      
     }
+
+    .nav-bouton:hover img{
+    content: url("/images/logo/Blue_bar.png");
+} 
  
     /****Formulaire de recherche *******/
     .form-recherche{
