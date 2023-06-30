@@ -184,9 +184,6 @@ nav{
     display:none;
 }
 
-
-
-
  .search-bar input{
   
     font-family: 'Raleway';
@@ -596,14 +593,24 @@ nav{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    /* .nav{
-         width:95%;
-    } */
+   
+    .main-container{
+        padding: 0px 0px;
+    }
+  
+    .nav{
+         margin:0 50px 0px 50px;
+    }
+
+    .nav-logo{
+        padding-left:0;
+    }
 
     .nav-lien {
-        padding: 1%;
- }  
- 
+        padding: 1% 3% 1% 10%;
+    }  
+    
+
     /******Formulaire Recherche *****/
     .form-recherche{
         height:auto;
@@ -636,8 +643,8 @@ nav{
 /****Hebergements*****/   
     .hebergements-and-populaires {
         flex-direction: column;
-        margin:0 7% 0 7% ;
-        width:86%;
+        margin:0 5% 0 5% ;
+        width: 84%;
     }
 
     .hebergements {
