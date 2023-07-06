@@ -615,7 +615,7 @@ padding:1px 0px 1px 10px;
     .form-recherche{
         height:auto;
         margin:5% 5% 35px 5%;
-        width:85%;
+        width:90%;
     }
 
     /*****FilterBar*****/
@@ -645,7 +645,7 @@ padding:1px 0px 1px 10px;
     .hebergements-and-populaires {
         flex-direction: column;
         margin:0 5% 0 5% ;
-        width: 84%;
+        width: 90%;
     }
 
     .hebergements {
@@ -683,8 +683,8 @@ padding:1px 0px 1px 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 20px 50px 20px 50px;
-        width:85%;
+        margin: 20px 5% 20px 5%;
+        width: 90%;
     }
 
     .activites-card-article img{
@@ -698,7 +698,8 @@ padding:1px 0px 1px 10px;
     }
 
     .footer{
-    width:82%;
+    width:90%;
+    margin: 0px 5% 0px 5%;
     }
 
 }
