@@ -1035,14 +1035,14 @@ padding:1px 0px 1px 10px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width:100%;
+        width:auto;
         margin:0px;
         padding-top: 30px;
         background: #F2F2F2;
     }
 
     .footer-section{
-        width:100%;
+        width:auto;
         margin: 0px 0px 30px 30px;
     }
 }
