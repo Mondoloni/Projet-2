@@ -93,6 +93,8 @@ nav{
     gap: 15px;
     width: 244px;
     height: 35px;  
+    border-top: 2px solid #FFFFFF; 
+    padding-top:14px;
 }
 
 .nav-bouton a{ 
@@ -112,8 +114,8 @@ nav{
     top:0px;
 }
 
-.nav-bouton:hover img{
-    content: url("/images/logo/Blue_bar.png");
+.nav-bouton:hover {
+    border-color: #0065FC;
 } 
 
 .nav-bouton:hover a{
@@ -729,6 +731,8 @@ padding:1px 0px 1px 10px;
         justify-content: center;
         align-items: center;
         width:50%; 
+        border-top :0px;
+        border-bottom: 2px solid #FFFFFF;
     }
 
     .nav-bouton:hover img{
